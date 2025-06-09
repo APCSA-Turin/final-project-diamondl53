@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Appstuff {
     
     private static final String API_KEY = "AIzaSyA6-T4EZ2TnGfLvIEma89qj7DncsKL4szE";
-    private static final int RADIUS = 1000; // (10 km)
+    private static final int RADIUS = 1000; // (1 km)
     private static double userLat;
     private static double userLon;
     private static String selectedCuisine;
@@ -22,7 +22,7 @@ public class Appstuff {
         while(true) {
             
             displayCuisineMenu();
-            System.out.print("Choose cuisine (0-6): ");
+            System.out.print("Choose cuisine (0-11): ");
             
             int choice = scanner.nextInt();
             scanner.nextLine(); 
@@ -32,13 +32,17 @@ public class Appstuff {
                 break;
             }
             
-            
-            if(choice == 1) {selectedCuisine = "Chinese";}
-            else if(choice == 2) {selectedCuisine = "Italian";}
-            else if(choice == 3) {selectedCuisine = "Mexican";}
-            else if(choice == 4) {selectedCuisine = "Indian";}
-            else if(choice == 5) {selectedCuisine = "Japanese";}
-            else if(choice == 6) {selectedCuisine = "Greek";}
+            if(choice == 1){selectedCuisine = "American";}
+            else if(choice == 2) {selectedCuisine = "Chinese";}
+            else if(choice == 3) {selectedCuisine = "Italian";}
+            else if(choice == 4) {selectedCuisine = "Mexican";}
+            else if(choice == 5) {selectedCuisine = "Indian";}
+            else if(choice == 6) {selectedCuisine = "Japanese";}
+            else if(choice == 7) {selectedCuisine = "Greek";}
+            else if(choice == 8){selectedCuisine = "Russian";}
+            else if(choice == 9){selectedCuisine = "Thai";}
+            else if(choice == 10){selectedCuisine = "Korean";}
+            else if(choice == 11){selectedCuisine = "Vietnamese";}
             else {
                 System.out.println("Invalid choice! Please try again.");
                 
@@ -53,12 +57,17 @@ public class Appstuff {
     
     public static void displayCuisineMenu() {
         printBoxTop();
-        System.out.println("║ 1. Chinese                   ║");
-        System.out.println("║ 2. Italian                   ║");
-        System.out.println("║ 3. Mexican                   ║");
-        System.out.println("║ 4. Indian                    ║");
-        System.out.println("║ 5. Japanese                  ║");
-        System.out.println("║ 6. Greek                     ║");
+        System.out.println("║ 1. American                  ║");
+        System.out.println("║ 2. Chinese                   ║");
+        System.out.println("║ 3. Italian                   ║");
+        System.out.println("║ 4. Mexican                   ║");
+        System.out.println("║ 5. Indian                    ║");
+        System.out.println("║ 6. Japanese                  ║");
+        System.out.println("║ 7. Greek                     ║");
+        System.out.println("║ 8. Russian                   ║");
+        System.out.println("║ 9. Thai                      ║");
+        System.out.println("║ 10. Korean                   ║");
+        System.out.println("║ 11. Vietnamese               ║");
         System.out.println("║ 0. Exit                      ║");
         printBoxBottom();
     }
