@@ -6,11 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 public class Apis{
 
-    // public static void main(String[] args) throws Exception{
-    //     // String endpoint = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.748440,-73.984559&radius=4500000000000000000000000&type=restaurant&key=AIzaSyA6-T4EZ2TnGfLvIEma89qj7DncsKL4szE";
-    //     // String jsonStr = getData(endpoint);
-        
-    // }
+    
     public static String getData(String endpoint) throws Exception {
         /*endpoint is a url (string) that you get from an API website*/
         URL url = new URL(endpoint);
